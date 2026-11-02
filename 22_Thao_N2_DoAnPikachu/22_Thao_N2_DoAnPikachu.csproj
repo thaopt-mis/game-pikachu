@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43F7C4A2-98A4-442B-8C76-D323B71BC8CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_22_Thao_N2_DoAnPikachu</RootNamespace>
+    <AssemblyName>22_Thao_N2_DoAnPikachu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormTuyChinh_22_Thao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTuyChinh_22_Thao.Designer.cs">
+      <DependentUpon>FormTuyChinh_22_Thao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame_22_Thao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGame_22_Thao.Designer.cs">
+      <DependentUpon>MainGame_22_Thao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_22_Thao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_22_Thao.Designer.cs">
+      <DependentUpon>Menu_22_Thao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHuongDan_22_Thao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHuongDan_22_Thao.Designer.cs">
+      <DependentUpon>FormHuongDan_22_Thao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormHuongDan_22_Thao.resx">
+      <DependentUpon>FormHuongDan_22_Thao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTuyChinh_22_Thao.resx">
+      <DependentUpon>FormTuyChinh_22_Thao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame_22_Thao.resx">
+      <DependentUpon>MainGame_22_Thao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_22_Thao.resx">
+      <DependentUpon>Menu_22_Thao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIKACHU1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flamingtext_com-3788797162-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachu-png-icon-17360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thoat-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hdcachchoi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flamingtext_com-9724271490-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffle %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieces36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_wwmslywwmslywwms-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xaotron-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuychinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuychinhtieude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xacnhan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnxacnhan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnHuy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PiakchuBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PiakchuBG1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timkiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timkiem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swap %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuychinh %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quaylai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinhwin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thuagame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Pikachu Song Pokemon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Music\nhacMain.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\The Pikachu Song Pokemon.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

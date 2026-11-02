@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22_Thao_N2_DoAnPikachu", "22_Thao_N2_DoAnPikachu\22_Thao_N2_DoAnPikachu.csproj", "{43F7C4A2-98A4-442B-8C76-D323B71BC8CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43F7C4A2-98A4-442B-8C76-D323B71BC8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F7C4A2-98A4-442B-8C76-D323B71BC8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F7C4A2-98A4-442B-8C76-D323B71BC8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F7C4A2-98A4-442B-8C76-D323B71BC8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B75C915-4ED9-41B0-9D87-BCB135815261}
+	EndGlobalSection
+EndGlobal
